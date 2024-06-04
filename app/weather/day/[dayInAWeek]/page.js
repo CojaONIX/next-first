@@ -5,10 +5,11 @@ export default function WeatherDayInAWeek({params}) {
     if(!days.includes(params.dayInAWeek)) {
         return (
             <>
-            <p>Wrong day!</p>
-            <p>Allowed days: {JSON.stringify(days)}</p>
+                <p>Wrong day!</p>
+                <p>Allowed days: {JSON.stringify(days)}</p>
             </>
         )
     }
+
     return <p>WeatherDayInAWeek Page - {params.dayInAWeek}</p>
 }
